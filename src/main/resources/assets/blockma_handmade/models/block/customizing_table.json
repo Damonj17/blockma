@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "blockma:block/customizing_table_bottom",
+    "east": "blockma:block/customizing_table_east",
+    "north": "blockma:block/customizing_table_north",
+    "particle": "blockma:block/customizing_table_north",
+    "south": "blockma:block/customizing_table_south",
+    "up": "blockma:block/customizing_table_top",
+    "west": "blockma:block/customizing_table_west"
+  }
+}

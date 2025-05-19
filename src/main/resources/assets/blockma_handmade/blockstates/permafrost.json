@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "blockma:block/permafrost"
+      },
+      {
+        "model": "blockma:block/permafrost_mirrored"
+      },
+      {
+        "model": "blockma:block/permafrost",
+        "y": 180
+      },
+      {
+        "model": "blockma:block/permafrost_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}

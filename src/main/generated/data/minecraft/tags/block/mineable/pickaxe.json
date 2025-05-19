@@ -1,0 +1,29 @@
+{
+  "values": [
+    "blockma:cobbled_permafrost",
+    "blockma:cobbled_permafrost_slab",
+    "blockma:cobbled_permafrost_stairs",
+    "blockma:cobbled_permafrost_wall",
+    "blockma:permafrost",
+    "blockma:permafrost_slab",
+    "blockma:permafrost_stairs",
+    "blockma:permafrost_wall",
+    "blockma:permafrost_bricks",
+    "blockma:permafrost_brick_slab",
+    "blockma:permafrost_brick_stairs",
+    "blockma:permafrost_brick_wall",
+    "blockma:polished_permafrost",
+    "blockma:polished_permafrost_slab",
+    "blockma:polished_permafrost_stairs",
+    "blockma:polished_permafrost_wall",
+    "blockma:pointed_permafrost",
+    "blockma:permafrost_gold_ore",
+    "blockma:permafrost_iron_ore",
+    "blockma:permafrost_coal_ore",
+    "blockma:permafrost_lapis_ore",
+    "blockma:permafrost_diamond_ore",
+    "blockma:permafrost_redstone_ore",
+    "blockma:permafrost_emerald_ore",
+    "blockma:permafrost_copper_ore"
+  ]
+}

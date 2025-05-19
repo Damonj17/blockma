@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "diamond",
+  "ingredient": "blockma:permafrost_diamond_ore",
+  "result": {
+    "id": "minecraft:diamond"
+  }
+}

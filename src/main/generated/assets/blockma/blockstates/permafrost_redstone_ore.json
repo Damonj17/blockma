@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "blockma:block/permafrost_redstone_ore"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pointed_dripstone",
+  "textures": {
+    "cross": "blockma:block/pointed_permafrost_down_tip_merge"
+  }
+}

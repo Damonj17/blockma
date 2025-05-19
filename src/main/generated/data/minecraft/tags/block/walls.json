@@ -1,0 +1,8 @@
+{
+  "values": [
+    "blockma:permafrost_wall",
+    "blockma:cobbled_permafrost_wall",
+    "blockma:polished_permafrost_wall",
+    "blockma:permafrost_brick_wall"
+  ]
+}

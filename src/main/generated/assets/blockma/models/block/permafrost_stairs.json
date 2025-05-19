@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "blockma:block/permafrost",
+    "side": "blockma:block/permafrost",
+    "top": "blockma:block/permafrost"
+  }
+}
