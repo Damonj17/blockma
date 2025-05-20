@@ -2,6 +2,7 @@ package damonj17.blockma;
 
 import net.damonj17.blockma.world.ModConfiguredFeatures;
 import net.damonj17.blockma.world.ModPlacedFeatures;
+import net.damonj17.blockma.world.biome.ModBiomes;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import damonj17.blockma.datagen.*;
@@ -31,6 +32,7 @@ public class BlockmaDataGenerator implements DataGeneratorEntrypoint {
 
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::bootstrap);
 	}
 
 }
