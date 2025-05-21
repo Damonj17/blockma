@@ -3,9 +3,13 @@ package net.damonj17.blockma;
 import net.damonj17.blockma.block.ModBlocks;
 import net.damonj17.blockma.item.ModItemGroups;
 import net.damonj17.blockma.item.ModItems;
+import net.damonj17.blockma.world.*;
 import net.damonj17.blockma.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,6 +20,13 @@ public class BlockmaMod implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
+	public static final Identifier LARGE_PERMAFROST_FEATURE_ID = Identifier.of("blockma", "large_permafrost");
+	public static final LargePermafrostFeature LARGE_PERMAFROST_FEATURE = new LargePermafrostFeature(LargePermafrostFeatureConfig.CODEC);
+	public static final Identifier SMALL_PERMAFROST_FEATURE_ID = Identifier.of("blockma", "small_permafrost");
+	public static final SmallPermafrostFeature SMALL_PERMAFROST_FEATURE = new SmallPermafrostFeature(SmallPermafrostFeatureConfig.CODEC);
+	public static final Identifier PERMAFROST_CLUSTER_FEATURE_ID = Identifier.of("blockma", "permafrost_cluster");
+	public static final PermafrostClusterFeature PERMAFROST_CLUSTER_FEATURE = new PermafrostClusterFeature(PermafrostClusterFeatureConfig.CODEC);
 
 	@Override
 	public void onInitialize() {
@@ -30,5 +41,8 @@ public class BlockmaMod implements ModInitializer {
 		ModBlocks.initialize();
 		LOGGER.info("Blockma Worldgen");
 		ModWorldGeneration.generateModWorldGen();
+		Registry.register(Registries.FEATURE, LARGE_PERMAFROST_FEATURE_ID, LARGE_PERMAFROST_FEATURE);
+		Registry.register(Registries.FEATURE, SMALL_PERMAFROST_FEATURE_ID, SMALL_PERMAFROST_FEATURE);
+		Registry.register(Registries.FEATURE, PERMAFROST_CLUSTER_FEATURE_ID, PERMAFROST_CLUSTER_FEATURE);
 	}
 }
