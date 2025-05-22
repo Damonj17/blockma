@@ -10,6 +10,8 @@ import net.fabricmc.api.ModInitializer;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.gen.feature.SmallDripstoneFeature;
+import net.minecraft.world.gen.feature.SmallDripstoneFeatureConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,8 +25,8 @@ public class BlockmaMod implements ModInitializer {
 
 	public static final Identifier LARGE_PERMAFROST_FEATURE_ID = Identifier.of("blockma", "large_permafrost");
 	public static final LargePermafrostFeature LARGE_PERMAFROST_FEATURE = new LargePermafrostFeature(LargePermafrostFeatureConfig.CODEC);
-	public static final Identifier SMALL_PERMAFROST_FEATURE_ID = Identifier.of("blockma", "small_permafrost");
-	public static final SmallPermafrostFeature SMALL_PERMAFROST_FEATURE = new SmallPermafrostFeature(SmallPermafrostFeatureConfig.CODEC);
+	public static final Identifier POINTED_PERMAFROST_FEATURE_ID = Identifier.of("blockma", "pointed_permafrost");
+	public static final SmallPermafrostFeature POINTED_PERMAFROST_FEATURE = new SmallPermafrostFeature(SmallPermafrostFeatureConfig.CODEC);
 	public static final Identifier PERMAFROST_CLUSTER_FEATURE_ID = Identifier.of("blockma", "permafrost_cluster");
 	public static final PermafrostClusterFeature PERMAFROST_CLUSTER_FEATURE = new PermafrostClusterFeature(PermafrostClusterFeatureConfig.CODEC);
 
@@ -42,7 +44,7 @@ public class BlockmaMod implements ModInitializer {
 		LOGGER.info("Blockma Worldgen");
 		ModWorldGeneration.generateModWorldGen();
 		Registry.register(Registries.FEATURE, LARGE_PERMAFROST_FEATURE_ID, LARGE_PERMAFROST_FEATURE);
-		Registry.register(Registries.FEATURE, SMALL_PERMAFROST_FEATURE_ID, SMALL_PERMAFROST_FEATURE);
+		Registry.register(Registries.FEATURE, POINTED_PERMAFROST_FEATURE_ID, POINTED_PERMAFROST_FEATURE);
 		Registry.register(Registries.FEATURE, PERMAFROST_CLUSTER_FEATURE_ID, PERMAFROST_CLUSTER_FEATURE);
 	}
 }
