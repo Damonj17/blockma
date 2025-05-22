@@ -3,15 +3,13 @@ package net.damonj17.blockma;
 import net.damonj17.blockma.block.ModBlocks;
 import net.damonj17.blockma.item.ModItemGroups;
 import net.damonj17.blockma.item.ModItems;
-import net.damonj17.blockma.world.*;
+import net.damonj17.blockma.world.feature.permafrost.*;
 import net.damonj17.blockma.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.SmallDripstoneFeature;
-import net.minecraft.world.gen.feature.SmallDripstoneFeatureConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

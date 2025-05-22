@@ -1,4 +1,4 @@
-package net.damonj17.blockma.world;
+package net.damonj17.blockma.world.feature.permafrost;
 
 import com.mojang.serialization.Codec;
 import java.util.Iterator;
@@ -9,8 +9,6 @@ import net.minecraft.util.math.Direction.Type;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.gen.feature.Feature;
-import net.damonj17.blockma.world.SmallPermafrostFeatureConfig;
-import net.damonj17.blockma.world.PermafrostHelper;
 import net.minecraft.world.gen.feature.util.FeatureContext;
 
 public class SmallPermafrostFeature extends Feature<SmallPermafrostFeatureConfig> {

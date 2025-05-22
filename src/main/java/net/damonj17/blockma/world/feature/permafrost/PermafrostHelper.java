@@ -1,4 +1,4 @@
-package net.damonj17.blockma.world;
+package net.damonj17.blockma.world.feature.permafrost;
 
 import java.util.function.Consumer;
 
@@ -53,11 +53,11 @@ public class PermafrostHelper {
     }
 
     protected static boolean canGenerate(WorldAccess world, BlockPos pos) {
-        return world.testBlockState(pos, net.damonj17.blockma.world.PermafrostHelper::canGenerate);
+        return world.testBlockState(pos, PermafrostHelper::canGenerate);
     }
 
     protected static boolean canGenerateOrLava(WorldAccess world, BlockPos pos) {
-        return world.testBlockState(pos, net.damonj17.blockma.world.PermafrostHelper::canGenerateOrLava);
+        return world.testBlockState(pos, PermafrostHelper::canGenerateOrLava);
     }
 
     protected static void getPermafrostThickness(Direction direction, int height, boolean merge, Consumer<BlockState> callback) {

@@ -1,7 +1,7 @@
 package damonj17.blockma;
 
-import net.damonj17.blockma.world.ModConfiguredFeatures;
-import net.damonj17.blockma.world.ModPlacedFeatures;
+import net.damonj17.blockma.world.feature.ModConfiguredFeatures;
+import net.damonj17.blockma.world.feature.ModPlacedFeatures;
 import net.damonj17.blockma.world.biome.ModBiomes;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

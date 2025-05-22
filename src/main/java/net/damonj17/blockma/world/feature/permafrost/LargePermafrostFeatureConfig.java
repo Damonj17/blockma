@@ -1,4 +1,4 @@
-package net.damonj17.blockma.world;
+package net.damonj17.blockma.world.feature.permafrost;
 
 
 import com.mojang.serialization.Codec;
@@ -8,7 +8,7 @@ import net.minecraft.util.math.intprovider.IntProvider;
 import net.minecraft.world.gen.feature.FeatureConfig;
 
 public class LargePermafrostFeatureConfig implements FeatureConfig {
-    public static final Codec<net.damonj17.blockma.world.LargePermafrostFeatureConfig> CODEC = RecordCodecBuilder.create((instance) -> {
+    public static final Codec<LargePermafrostFeatureConfig> CODEC = RecordCodecBuilder.create((instance) -> {
         return instance.group(Codec.intRange(1, 512).fieldOf("floor_to_ceiling_search_range").orElse(30).forGetter((config) -> {
             return config.floorToCeilingSearchRange;
         }), IntProvider.createValidatingCodec(1, 60).fieldOf("column_radius").forGetter((config) -> {
@@ -27,7 +27,7 @@ public class LargePermafrostFeatureConfig implements FeatureConfig {
             return config.minRadiusForWind;
         }), Codec.floatRange(0.0F, 5.0F).fieldOf("min_bluntness_for_wind").forGetter((config) -> {
             return config.minBluntnessForWind;
-        })).apply(instance, net.damonj17.blockma.world.LargePermafrostFeatureConfig::new);
+        })).apply(instance, LargePermafrostFeatureConfig::new);
     });
     public final int floorToCeilingSearchRange;
     public final IntProvider columnRadius;

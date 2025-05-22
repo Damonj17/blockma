@@ -1,4 +1,4 @@
-package net.damonj17.blockma.world;
+package net.damonj17.blockma.world.feature.permafrost;
 
 import net.damonj17.blockma.block.ModBlocks;
 import com.mojang.serialization.Codec;

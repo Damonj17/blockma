@@ -1,4 +1,4 @@
-package net.damonj17.blockma.world;
+package net.damonj17.blockma.world.feature;
 
 import net.damonj17.blockma.BlockmaMod;
 import net.minecraft.registry.Registerable;
@@ -14,12 +14,24 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> POINTED_PERMAFROST = ConfiguredFeatures.of("permafrost_cluster");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PERMAFROST_CLUSTER = ConfiguredFeatures.of("large_permafrost");
     public static final RegistryKey<ConfiguredFeature<?, ?>> LARGE_PERMAFROST = ConfiguredFeatures.of("pointed_permafrost");
+    //public static final RegistryKey<ConfiguredFeature<?, ?>> PERMAFROST_ORE_COAL = ConfiguredFeatures.of("permafrost_ore_coal");
+    //public static final RegistryKey<ConfiguredFeature<?, ?>> PERMAFROST_ORE_COAL_BURIED = ConfiguredFeatures.of("permafrost_ore_coal_buried");
+    //public static final RegistryKey<ConfiguredFeature<?, ?>> PERMAFROST_ORE_IRON = ConfiguredFeatures.of("permafrost_ore_iron");
+    //public static final RegistryKey<ConfiguredFeature<?, ?>> PERMAFROST_ORE_IRON_SMALL = ConfiguredFeatures.of("permafrost_ore_iron_small");
+    //public static final RegistryKey<ConfiguredFeature<?, ?>> PERMAFROST_ORE_GOLD = ConfiguredFeatures.of("permafrost_ore_gold");
+    //public static final RegistryKey<ConfiguredFeature<?, ?>> PERMAFROST_ORE_GOLD_BURIED = ConfiguredFeatures.of("permafrost_ore_gold_buried");
+    //public static final RegistryKey<ConfiguredFeature<?, ?>> PERMAFROST_ORE_REDSTONE = ConfiguredFeatures.of("permafrost_ore_redstone");
+    //public static final RegistryKey<ConfiguredFeature<?, ?>> PERMAFROST_ORE_DIAMOND_SMALL = ConfiguredFeatures.of("permafrost_ore_diamond_small");
+    //public static final RegistryKey<ConfiguredFeature<?, ?>> PERMAFROST_ORE_DIAMOND_MEDIUM = ConfiguredFeatures.of("permafrost_ore_diamond_medium");
+    //public static final RegistryKey<ConfiguredFeature<?, ?>> PERMAFROST_ORE_DIAMOND_LARGE = ConfiguredFeatures.of("permafrost_ore_diamond_large");
+    //public static final RegistryKey<ConfiguredFeature<?, ?>> PERMAFROST_ORE_DIAMOND_BURIED = ConfiguredFeatures.of("permafrost_ore_diamond_buried");
+    //public static final RegistryKey<ConfiguredFeature<?, ?>> PERMAFROST_ORE_LAPIS = ConfiguredFeatures.of("permafrost_ore_lapis");
+    //public static final RegistryKey<ConfiguredFeature<?, ?>> PERMAFROST_ORE_LAPIS_BURIED = ConfiguredFeatures.of("permafrost_ore_lapis_buried");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);

@@ -1,4 +1,4 @@
-package net.damonj17.blockma.world;
+package net.damonj17.blockma.world.feature.permafrost;
 
 import com.mojang.serialization.Codec;
 import net.damonj17.blockma.block.ModBlocks;
@@ -14,8 +14,6 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.StructureWorldAccess;
 import net.minecraft.world.gen.feature.Feature;
-import net.damonj17.blockma.world.LargePermafrostFeature;
-import net.damonj17.blockma.world.LargePermafrostFeatureConfig;
 import net.minecraft.world.gen.feature.util.CaveSurface;
 
 import net.minecraft.world.gen.feature.util.FeatureContext;

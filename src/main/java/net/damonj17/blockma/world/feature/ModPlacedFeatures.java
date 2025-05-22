@@ -1,4 +1,4 @@
-package net.damonj17.blockma.world;
+package net.damonj17.blockma.world.feature;
 
 import net.damonj17.blockma.BlockmaMod;
 import net.minecraft.registry.Registerable;
@@ -8,8 +8,6 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
-import net.minecraft.world.gen.YOffset;
-import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 
 import java.util.List;
 
@@ -18,6 +16,19 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> POINTED_PERMAFROST = PlacedFeatures.of("permafrost_cluster");
     public static final RegistryKey<PlacedFeature> PERMAFROST_CLUSTER = PlacedFeatures.of("large_permafrost");
     public static final RegistryKey<PlacedFeature> LARGE_PERMAFROST = PlacedFeatures.of("pointed_permafrost");
+    //public static final RegistryKey<PlacedFeature> PERMAFROST_ORE_COAL = PlacedFeatures.of("permafrost_ore_coal");
+    //public static final RegistryKey<PlacedFeature> PERMAFROST_ORE_COAL_BURIED = PlacedFeatures.of("permafrost_ore_coal_buried");
+    //public static final RegistryKey<PlacedFeature> PERMAFROST_ORE_IRON = PlacedFeatures.of("permafrost_ore_iron");
+    //public static final RegistryKey<PlacedFeature> PERMAFROST_ORE_IRON_SMALL = PlacedFeatures.of("permafrost_ore_iron_small");
+    //public static final RegistryKey<PlacedFeature> PERMAFROST_ORE_GOLD = PlacedFeatures.of("permafrost_ore_gold");
+    //public static final RegistryKey<PlacedFeature> PERMAFROST_ORE_GOLD_BURIED = PlacedFeatures.of("permafrost_ore_gold_buried");
+    //public static final RegistryKey<PlacedFeature> PERMAFROST_ORE_REDSTONE = PlacedFeatures.of("permafrost_ore_redstone");
+    //public static final RegistryKey<PlacedFeature> PERMAFROST_ORE_DIAMOND_SMALL = PlacedFeatures.of("permafrost_ore_diamond_small");
+    //public static final RegistryKey<PlacedFeature> PERMAFROST_ORE_DIAMOND_MEDIUM = PlacedFeatures.of("permafrost_ore_diamond_medium");
+    //public static final RegistryKey<PlacedFeature> PERMAFROST_ORE_DIAMOND_LARGE = PlacedFeatures.of("permafrost_ore_diamond_large");
+    //public static final RegistryKey<PlacedFeature> PERMAFROST_ORE_DIAMOND_BURIED = PlacedFeatures.of("permafrost_ore_diamond_buried");
+    //public static final RegistryKey<PlacedFeature> PERMAFROST_ORE_LAPIS = PlacedFeatures.of("permafrost_ore_lapis");
+    //public static final RegistryKey<PlacedFeature> PERMAFROST_ORE_LAPIS_BURIED = PlacedFeatures.of("permafrost_ore_lapis_buried");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
