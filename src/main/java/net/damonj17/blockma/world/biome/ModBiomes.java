@@ -22,8 +22,8 @@ import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 
 public class ModBiomes {
-    //public static final RegistryKey<Biome> PERMAFROST_CAVE = RegistryKey.of(RegistryKeys.BIOME,
-    //        new Identifier(BlockmaMod.MOD_ID,"permafrost_cave"));
+    public static final RegistryKey<Biome> PERMAFROST_CAVE = RegistryKey.of(RegistryKeys.BIOME,
+            Identifier.of(BlockmaMod.MOD_ID, "permafrost_cave"));
 
 
     public static void bootstrap(Registerable<Biome> context) {

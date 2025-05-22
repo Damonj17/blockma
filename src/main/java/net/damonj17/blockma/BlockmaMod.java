@@ -23,11 +23,11 @@ public class BlockmaMod implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	public static final Identifier LARGE_PERMAFROST_FEATURE_ID = Identifier.of("blockma", "large_permafrost");
+	public static final Identifier LARGE_PERMAFROST_FEATURE_ID = Identifier.of(BlockmaMod.MOD_ID, "large_permafrost");
 	public static final LargePermafrostFeature LARGE_PERMAFROST_FEATURE = new LargePermafrostFeature(LargePermafrostFeatureConfig.CODEC);
-	public static final Identifier POINTED_PERMAFROST_FEATURE_ID = Identifier.of("blockma", "pointed_permafrost");
+	public static final Identifier POINTED_PERMAFROST_FEATURE_ID = Identifier.of(BlockmaMod.MOD_ID, "pointed_permafrost");
 	public static final SmallPermafrostFeature POINTED_PERMAFROST_FEATURE = new SmallPermafrostFeature(SmallPermafrostFeatureConfig.CODEC);
-	public static final Identifier PERMAFROST_CLUSTER_FEATURE_ID = Identifier.of("blockma", "permafrost_cluster");
+	public static final Identifier PERMAFROST_CLUSTER_FEATURE_ID = Identifier.of(BlockmaMod.MOD_ID, "permafrost_cluster");
 	public static final PermafrostClusterFeature PERMAFROST_CLUSTER_FEATURE = new PermafrostClusterFeature(PermafrostClusterFeatureConfig.CODEC);
 
 	@Override
